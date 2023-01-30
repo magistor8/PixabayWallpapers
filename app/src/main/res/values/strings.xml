@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PixabayWallpapers</string>
+    <string name="header_text">choose a category:</string>
+    <string name="category_button_text">category</string>
+    <string name="select_button_text">Set to desktop</string>
+    <string name="AuthorizationError">Требуется аутентификация</string>
+    <string name="BadDataFormat">Некорректный формат данных</string>
+    <string name="BadRequest">Ошибка сервера</string>
+    <string name="Error">Что-то пошло не так</string>
+    <string name="DialogAlertTitleError">Ошибка</string>
+    <string name="DialogAlertTitleSuccess">Успешно</string>
+    <string name="ok">Ok</string>
+    <string name="NetworkError">Отсутствует подключение к интернету</string>
+    <string name="ServerNotResponce">Нет ответа от сервера</string>
+    <string name="SetToDesk">Установлено на рабочий стол</string>
+    <string name="loading">LOADING...</string>
+
+    <string-array name="category_array">
+        <item>backgrounds</item>
+        <item>fashion</item>
+        <item>nature</item>
+        <item>science</item>
+        <item>education</item>
+        <item>feelings</item>
+        <item>health</item>
+        <item>people</item>
+        <item>religion</item>
+        <item>places</item>
+        <item>animals</item>
+        <item>industry</item>
+        <item>computer</item>
+        <item>food</item>
+        <item>sports</item>
+        <item>transportation</item>
+        <item>travel</item>
+        <item>buildings</item>
+        <item>business</item>
+        <item>music</item>
+    </string-array>
+</resources>

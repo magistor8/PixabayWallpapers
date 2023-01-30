@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i2"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/i1"
+        app:layout_constraintEnd_toStartOf="@id/i3"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i3"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@id/i4"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/i2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i4"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/i3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i5"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/i2"
+        app:layout_constraintStart_toEndOf="@id/i1"
+        app:layout_constraintEnd_toStartOf="@id/i6"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i6"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@id/i7"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/i5"
+        app:layout_constraintTop_toBottomOf="@id/i2"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i7"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_small_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/i6"
+        app:layout_constraintTop_toBottomOf="@id/i2"
+        tools:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/i1"
+        android:layout_width="@dimen/viewholder_image_width"
+        android:layout_height="@dimen/viewholder_large_image_height"
+        android:scaleType="centerCrop"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/i2"
+        tools:background="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

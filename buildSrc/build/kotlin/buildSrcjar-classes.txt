@@ -1,0 +1,1 @@
+C:\Users\magis\AndroidStudioProjects\PixabayWallpapers\buildSrc\build\classes\kotlin\main\Dependencies.class;C:\Users\magis\AndroidStudioProjects\PixabayWallpapers\buildSrc\build\classes\kotlin\main\Versions.class

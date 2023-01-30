@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.magistor8.pixabaywallpapers.view.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true"
+            app:enterAnim="@animator/fragment_enter"
+            app:exitAnim="@animator/fragment_exit"
+            app:popEnterAnim="@animator/pop_enter"
+            app:popExitAnim="@animator/pop_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.magistor8.pixabaywallpapers.view.category.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_categoryImagesFragment"
+            app:destination="@id/categoryImagesFragment"
+            app:enterAnim="@animator/fragment_enter"
+            app:exitAnim="@animator/fragment_exit"
+            app:popEnterAnim="@animator/pop_enter"
+            app:popExitAnim="@animator/pop_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/categoryImagesFragment"
+        android:name="com.magistor8.pixabaywallpapers.view.category_images.CategoryImagesFragment"
+        android:label="CategoryImagesFragment" >
+        <action
+            android:id="@+id/action_categoryImagesFragment_to_imageFragment"
+            app:destination="@id/imageFragment"
+            app:enterAnim="@animator/fragment_enter"
+            app:exitAnim="@animator/fragment_exit" />
+        <action
+            android:id="@+id/action_categoryImagesFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment"
+            app:popUpTo="@+id/nav_graph"
+            app:enterAnim="@animator/fragment_enter"
+            app:exitAnim="@animator/fragment_exit"
+            app:popEnterAnim="@animator/pop_enter"
+            app:popExitAnim="@animator/pop_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.magistor8.pixabaywallpapers.view.image.ImageFragment"
+        android:label="ImageFragment" />
+</navigation>

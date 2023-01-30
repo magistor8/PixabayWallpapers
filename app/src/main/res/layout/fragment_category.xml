@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        style="@style/IconStyle"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/categoty1"
+        app:layout_constraintEnd_toStartOf="@+id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/Header"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty1"
+        style="@style/category_button"
+        android:layout_marginTop="@dimen/category_button_marginTop"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/categoty4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        app:layout_constraintEnd_toStartOf="@id/categoty2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty2"
+        style="@style/category_button"
+        android:layout_marginStart="@dimen/category_button_marginStart"
+        app:layout_constraintStart_toEndOf="@id/categoty1"
+        app:layout_constraintTop_toTopOf="@id/categoty1"
+        app:layout_constraintEnd_toStartOf="@id/categoty3"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty3"
+        style="@style/category_button"
+        android:layout_marginStart="@dimen/category_button_marginStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/categoty2"
+        app:layout_constraintTop_toTopOf="@id/categoty1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty4"
+        style="@style/category_button"
+        android:layout_marginTop="@dimen/category_button_marginTop"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoty1"
+        app:layout_constraintEnd_toStartOf="@id/categoty5"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty5"
+        style="@style/category_button"
+        android:layout_marginStart="@dimen/category_button_marginStart"
+        app:layout_constraintStart_toEndOf="@id/categoty4"
+        app:layout_constraintTop_toTopOf="@id/categoty4"
+        app:layout_constraintEnd_toStartOf="@id/categoty6"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/categoty6"
+        style="@style/category_button"
+        android:layout_marginStart="@dimen/category_button_marginStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/categoty5"
+        app:layout_constraintTop_toTopOf="@id/categoty4" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:lottie_fileName="animations/spinner.json"
+        app:lottie_loop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoty5"
+        android:visibility="gone"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
